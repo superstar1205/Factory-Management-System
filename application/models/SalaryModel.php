@@ -16,15 +16,12 @@ class SalaryModel extends CI_Model {
 		LEFT JOIN order_tb ON salary_tb.order_id = order_tb.id
 		LEFT JOIN jobs_tb ON salary_tb.job_id = jobs_tb.id
 		LEFT JOIN daily_target_tb ON jobs_tb.id = daily_target_tb.job_id
-	WHERE salary_tb.id > 0  AND salary_tb.isDeleted = 0";
+		WHERE salary_tb.id > 0  AND salary_tb.isDeleted = 0";
           
 		if($where != ""){
 			$sql .= $where;
 		}
-
-        
 		$query =$this->db->query($sql);
-        
     	return $query->result_array();
 	}
 

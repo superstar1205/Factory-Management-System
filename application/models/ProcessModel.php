@@ -14,12 +14,12 @@ class ProcessModel extends CI_Model {
 
 	function get_rows($where, $offset, $limit)
     {
-		$sql = "select daily_target_tb.*, employee_tb.name, order_tb.order_no, jobs_tb.job 
-				from daily_target_tb 
-				left join employee_tb on daily_target_tb.employee_id = employee_tb.id
-				left join order_tb on daily_target_tb.order_id = order_tb.id
-				left join jobs_tb on daily_target_tb.job_id = jobs_tb.id
-				where daily_target_tb.id > 0 ".$where." order by order_tb.order_no desc";
+		$sql = "SELECT daily_target_tb.*, employee_tb.name, order_tb.order_no, jobs_tb.job 
+				FROM daily_target_tb 
+				LEFT JOIN employee_tb ON daily_target_tb.employee_id = employee_tb.id
+				LEFT JOIN order_tb ON daily_target_tb.order_id = order_tb.id
+				LEFT JOIN jobs_tb ON daily_target_tb.job_id = jobs_tb.id
+				WHERE daily_target_tb.id > 0 ".$where." ORDER BY order_tb.order_no desc";
 		$sql .= " limit ".$offset." , ".$limit;
 		$query = $this->db->query($sql);
 		return $query->result_array();
@@ -42,10 +42,10 @@ class ProcessModel extends CI_Model {
 
 	function getInfo($id)
     {
-		$sql = "select daily_target_tb.*, jobs_tb.job as job_name
-				from daily_target_tb 
-				left join jobs_tb on daily_target_tb.job_id = jobs_tb.id
-				where daily_target_tb.id = '".$id."'";
+		$sql = "SELECT daily_target_tb.*, jobs_tb.job as job_name
+				FROM daily_target_tb 
+				LEFT JOIN jobs_tb ON daily_target_tb.job_id = jobs_tb.id
+				WHERE daily_target_tb.id = '".$id."'";
 		$query = $this->db->query($sql);
 		return $query->row_array();
 	}

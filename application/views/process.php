@@ -250,12 +250,9 @@
                             $("#order_no").val(json_obj.order_id);
                             $("#customer").val(json_obj.customer);
                             $("#employee").val(json_obj.employee_id);
-
                             var shtml = "";                            
-                            shtml += '<option value="'+json_obj.job_id+'">'+json_obj.job_name+'</option>';                            
-
+                            shtml += '<option value="'+json_obj.job_id+'">'+json_obj.job_name+'</option>';
                             $("#job").html(shtml);
-
                             $("#completed_piece").val(json_obj.completed_piece);
                             $("#dailydate").val(json_obj.work_month + "/" + json_obj.work_day + "/" + json_obj.work_year);
                             $("#target").val(json_obj.target);

@@ -5,8 +5,6 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
-
-                        <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
@@ -14,7 +12,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end page title -->
 
                         <?php echo $msg;?>
 
@@ -82,7 +79,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -102,9 +98,8 @@
                                                 <div class="text-sm-right">
                                                     <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" onclick="show_func();"><i class="mdi mdi-plus mr-1"></i> Add New </button>
                                                 </div>
-                                            </div><!-- end col-->
+                                            </div>
                                         </div>
-                
                                         <?php echo form_open('', array('method' => 'post'));?>
                                             <input type="hidden" id="edit_id" name="edit_id" value="">
                                             <div class="table-responsive">
@@ -191,8 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end row -->
-                    </div> <!-- container-fluid -->
+                    </div>
                 </div>
                 <!-- End Page-content -->
                 <script>
