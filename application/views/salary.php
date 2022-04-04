@@ -6,8 +6,6 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
-
-                        <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
@@ -15,8 +13,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- end page title -->
                         <?php echo form_open('salary/'.$id, array('method' => 'post'));?>
                             <div class="row">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
@@ -156,7 +152,7 @@
                                                         </div>
                                                         <div class="d-print-none">
                                                             <div class="float-right">
-                                                            <button class="btn btn-warning" name="srch_btn" value="ok" onclick="display()">View Total</button>
+                                                                <button class="btn btn-warning" name="srch_btn" value="ok" onclick="display()">View Total</button>
                                                                 <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light mr-1" style="width: 100px;" title="Print"><i class="fa fa-print"></i></a>
                                                                 <a href="<?php echo base_url('employee');?>" class="btn btn-primary w-md waves-effect waves-light">Back</a>
                                                             </div>
@@ -165,7 +161,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- end row -->
                                     </div>
                                 </div>
                                 <div class="col-12 rest" id="rest" style="display: none;">

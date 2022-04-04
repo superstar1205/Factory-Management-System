@@ -86,7 +86,6 @@
                                                             </div>
                                                         </div><!-- input-group -->
                                                     </div>
-
                                                     <div class="row">
                                                         <div class="form-group col-md-6">
                                                             <label for="Name">Daily Target :</label>
@@ -98,7 +97,6 @@
                                                             <input type="text" class="form-control" name="completed_piece" id="completed_piece" placeholder="Enter Completed Pieces">
                                                         </div>
                                                     </div> 
-
                                                     <div class="col-sm-12 text-center">
                                                         <button type="submit" name="saveBtn" value="ok" class="btn btn-primary mr-1 waves-effect waves-light">Save Changes</button>
                                                         <button type="button" class="btn btn-secondary waves-effect" onclick="hide_func();">Cancel</button>
@@ -111,7 +109,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -131,9 +128,8 @@
                                                 <div class="text-sm-right">
                                                     <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" onclick="show_func();"><i class="mdi mdi-plus mr-1"></i> Add New </button>
                                                 </div>
-                                            </div><!-- end col-->
+                                            </div>
                                         </div>
-
                                         <?php echo form_open('', array('method' => 'post'));?>
                                             <input type="hidden" id="edit_id" name="edit_id" value="">
                                             <input type="hidden" id="job_id" name="job_id" value="">
@@ -221,8 +217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end row -->
-                    </div> <!-- container-fluid -->
+                    </div>
                 </div>
                 <!-- End Page-content -->
                 
