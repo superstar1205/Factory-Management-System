@@ -60,8 +60,7 @@ class Process extends CI_Controller {
 				'completed_piece' => $completed_piece,
 				'order_payment'   => $salary,
 				'created_at'	  => date('Y-m-d H:i:s')
-			);				
-			var_dump("order", $order_no, "job", $job);
+			);
 			$order_detail_info = $this->OrdersModel->get_order_detail_rows(" where order_id = '".$order_no."' and job_id = '".$job."'");
 
 			$add_id = $this->input->post('add_id', TRUE);

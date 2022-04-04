@@ -128,14 +128,6 @@ class Employee extends CI_Controller {
 		echo(json_encode($employee_info));
 	}
 
-	public function get_retbl()
-	{
-		$id = $this->input->post("id");
-		$year = $this->input->post("syear");
-		$month = $this->input->post("smonth");
-		var_dump("eid:",$id,"Year:", $year, "month:", $month);
-		// $result = $this->SalaryModel->getRetbl($id, $year, $month);
-	}
 
 	public function salary()
 	{
@@ -179,7 +171,6 @@ class Employee extends CI_Controller {
 			$where.=" and salary_tb.calc_month = '".$srch_month."'";
 		}
 		if ($srch_year !='' && $srch_month !=''){
-			var_dump("ID:", $id, "Y:", $srch_year, "M:", $srch_month );
 			$cpop_list = $this->SalaryModel->get_re_rows($id, $srch_year, $srch_month);
 		}
 		$employee_data = $this->EmployeeModel->getInfo($id);
