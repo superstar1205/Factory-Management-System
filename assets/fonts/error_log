@@ -1,0 +1,2 @@
+[27-Aug-2020 22:28:43 America/New_York] PHP Warning:  Unexpected character in input:  '' (ASCII=8) state=0 in /home/ictnkhgt/gms.ictnotes.org/assets/fonts/fa-solid-900.html on line 556
+[27-Aug-2020 22:28:43 America/New_York] PHP Parse error:  syntax error, unexpected '~', expecting ',' or ')' in /home/ictnkhgt/gms.ictnotes.org/assets/fonts/fa-solid-900.html on line 556
