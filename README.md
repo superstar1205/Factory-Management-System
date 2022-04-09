@@ -1,2 +1,2 @@
 # Job-Site
- This is a Job site. (G.M.S)
+ This is a Job site.
