@@ -1,5 +1,6 @@
 # Job-Site
- This is a Job site.
+This is a factory management system.
+This system have much modules for employee managing, icome estimating, inventory managing, jobs managing, order processing, salary...
 
 Codeigniter & MySQl with Bootstrap UI
 
