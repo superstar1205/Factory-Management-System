@@ -13,6 +13,6 @@ admin management all employees
 
 ## Contact Link
 
-[telegram] (https://t.me/ProDev1205)
+[telegram] (https://t.me/superstar1205)
 
 [Skype] (https://join.skype.com/invite/xAHPnMKaZkkk)
